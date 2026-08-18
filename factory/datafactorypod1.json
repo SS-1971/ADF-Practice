@@ -1,0 +1,15 @@
+{
+	"name": "datafactorypod1",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3a4833c5-fe5f-4755-b39c-51b41a0defb6",
+		"tenantId": "330cd47f-c936-437b-be75-5070264d8a0f"
+	}
+}

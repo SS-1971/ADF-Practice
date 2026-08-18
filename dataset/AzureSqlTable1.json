@@ -1,0 +1,86 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "varchar"
+			},
+			{
+				"name": "first_name",
+				"type": "varchar"
+			},
+			{
+				"name": "last_name",
+				"type": "varchar"
+			},
+			{
+				"name": "email",
+				"type": "varchar"
+			},
+			{
+				"name": "phone",
+				"type": "varchar"
+			},
+			{
+				"name": "age",
+				"type": "varchar"
+			},
+			{
+				"name": "city",
+				"type": "varchar"
+			},
+			{
+				"name": "state",
+				"type": "varchar"
+			},
+			{
+				"name": "country",
+				"type": "varchar"
+			},
+			{
+				"name": "customer_segment",
+				"type": "varchar"
+			},
+			{
+				"name": "acquisition_channel",
+				"type": "varchar"
+			},
+			{
+				"name": "plan",
+				"type": "varchar"
+			},
+			{
+				"name": "customer_status",
+				"type": "varchar"
+			},
+			{
+				"name": "signup_date",
+				"type": "varchar"
+			},
+			{
+				"name": "last_purchase_date",
+				"type": "varchar"
+			},
+			{
+				"name": "total_orders",
+				"type": "varchar"
+			},
+			{
+				"name": "total_spend",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "sales",
+			"table": "customers"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
