@@ -1,0 +1,47 @@
+{
+	"name": "PL_CopySqlToBlob",
+	"properties": {
+		"activities": [
+			{
+				"name": "LU_Parameterized_data",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "schema",
+						"value": "sales"
+					},
+					{
+						"name": "table",
+						"value": "customers"
+					},
+					{
+						"name": "db-connection"
+					},
+					{
+						"name": "server"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "DS_AzureSqlTable",
+						"type": "DatasetReference"
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}
